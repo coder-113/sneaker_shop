@@ -1,0 +1,100 @@
+.banner-container {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  height: 100px;
+}
+ 
+.banner {
+    flex: 1;
+    margin-right: 10px;
+}
+  
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  animation: slideBanner 2s linear infinite;
+}
+  
+  @keyframes slideBanner {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+.article {
+    margin-top: 20px;
+}
+
+.date-line {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 14px;
+  color: gray;
+}
+
+.survey-page {
+  text-align: center;
+}
+
+.pr {
+  font-size: 20px;
+  color: red;
+  text-decoration: underline;
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.choices img {
+  width: 200px;
+  height: auto;
+  cursor: pointer;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+}
+
+.dialog-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.close-button,
+.submit {
+  margin-top: 10px;
+  background-color: #E72727;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+small {
+  color: grey;
+}
